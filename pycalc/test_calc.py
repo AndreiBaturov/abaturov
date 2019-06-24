@@ -126,12 +126,13 @@ class PycalcUnitTestCase(unittest.TestCase):
                          _Token(index=3, type='PLUS', value='+')])
         self.assertEqual(_pkg_calc(postfix), 10.0)
 
-    def test_calc(self):
+ def test_calc(self):
         tests = (
             "2+2 *2",
             "(2(2))",
             "1+2*3**4",
             "-13",
+            "-2**2",
             "(2+3)*4",
             "-(1)",
             "-5**-1",
@@ -149,6 +150,7 @@ class PycalcUnitTestCase(unittest.TestCase):
             "False + 1",
             "len(list(range(10))*2)",
             "4**2**3",
+            "-5**-1-1",
             "10**-2",
             "log10(100)",
             "-13",
@@ -174,6 +176,7 @@ class PycalcUnitTestCase(unittest.TestCase):
             "e**5>=e**5+1",
             "1+2*4/3+1!=1+2*4/3+2",
             "(100)",
+            "666",
             "10(2+1)",
             "-.1",
             "1/3",
