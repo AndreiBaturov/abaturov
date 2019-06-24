@@ -6,8 +6,6 @@ setuptools.setup(
     version="1.0",
     author="Andrei Baturov",
     description="Python command-line calculator",
-    long_description=long_description,
-    long_description_content_type="text/markdown",
     url="https://github.com/sinbat85/abaturov.git",
     packages=("pycalc",),
     classifiers=[
