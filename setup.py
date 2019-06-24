@@ -8,7 +8,7 @@ setuptools.setup(
     description="Python command-line calculator",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://git.epam.com/Andrei_Baturov/python_course/tree/master/final",
+    url="https://github.com/sinbat85/abaturov.git",
     packages=("pycalc",),
     classifiers=[
         "Programming Language :: Python :: 3.7",
