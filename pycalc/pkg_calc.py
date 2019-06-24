@@ -4,7 +4,7 @@ import re
 
 from collections import namedtuple, OrderedDict, deque
 
-from pycalc.ext_modules import find_attr, import_modules
+from pycalc.ext_mod import find_attr, import_modules
 
 
 # Constant ordered dictionary with tokens: regexp, operator and precedence
